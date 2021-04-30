@@ -1,0 +1,87 @@
+@media only screen and (min-width:968px){
+
+    #img-seccion{
+        height:100vh;
+        min-height: 700px;
+        background-image: url('../img/headerMobile.png');
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    #form-seccion{
+        min-height: 700px;
+    }
+
+    #img-seccion{
+        background-position: 60% 70% !important;
+    }
+
+    #img-seccion .img{
+        display: block;
+        width:100%;
+        height: 100%;
+    }
+
+    #border-bg{
+        position:absolute;
+        display: block !important;
+        margin:auto;
+    
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    
+        height:90%;
+        width: 90%;
+    }    
+
+    #top #img-seccion .title-box{
+        position:absolute;
+        top:20px;
+        left:50px;
+    }
+
+    #img-seccion .logo{
+        position: absolute;
+        top: 10px;
+        left:100px;
+        margin:0 !important;
+    }
+
+    #products{
+        max-width: 900px !important;
+    }
+
+    footer .card{
+        border-bottom: 0px !important;
+    }
+
+    footer #title .linea{
+        position:absolute;
+        margin:auto;
+        margin-top:70px;
+        width:70%;      
+        left:0;
+        right: 0;
+        z-index: 0;
+    }
+
+    footer .title{
+        max-width: 40%;
+        position: relative;
+        font-size:30px !important;
+        font-weight: bold;
+        background-color: var(--bs-bluestrong);
+        z-index: 50;
+    }
+
+    footer h3
+
+}

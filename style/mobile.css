@@ -1,0 +1,476 @@
+@import url('desktop.css');
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fuente/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fuente/Poppins-Black.ttf");
+}
+
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --bs-bluestrong: #05408D;
+    --bs-bluelight: #05C6C6;
+    --bs-white: white;
+    --bs-gray: #AEAFB0;
+    --bs-supergray:#C2CFE4;
+}
+
+
+.btn{
+    font-family: 'Poppins-Bold';
+}
+
+#border-bg{
+    display:none;
+}
+
+#top{
+    width: 100%;
+    height: auto;
+}
+
+/* SECCION DE LA IMAGEN TOP */
+#img-seccion{
+    display: block;
+    background-image: url('../img/headerMobile.png');
+    background-size:cover;
+    background-position:bottom center;
+    padding-bottom:25px;
+}
+
+#img-seccion .logo{
+    position:relative;
+    display: block;
+    margin:auto;
+    margin-top:50px;
+    max-width: 200px;
+}
+
+#top #img-seccion .title-box{
+    display: block;
+    width: 100%;
+
+    max-width: 300px;
+    margin:auto;
+    margin-top:100px;
+    margin-bottom:500px;
+    text-align: center;
+
+    font-family: "Poppins-Bold";
+}
+
+#top #img-seccion .title-box h2{
+    color: var(--bs-bluestrong);
+    font-size:50px;
+    font-weight: bold;
+}
+
+#top #img-seccion .title-box h3{
+    display:block;
+    margin:auto;
+    background-color: var(--bs-bluestrong);
+    color: var(--bs-bluelight);
+    font-size:30px;
+    max-width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+#top #img-seccion .title-box p{
+    color: var(--bs-white);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#form-seccion{
+    background:var(--bs-bluestrong);
+    padding-bottom:25px;
+}
+
+#form-seccion .box-form{
+    position:relative;
+    display: block;
+    margin:auto;
+    margin-top:150px;
+    z-index:100;
+}
+
+#form-seccion .medical_logo,
+footer .medical_logo{
+    display: block;
+    margin:auto;
+    max-width: 200px;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+
+
+#form-seccion .box-form .title-box{
+    display:block;
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    font-family: 'Poppins-Regular';
+}
+
+#form-seccion .box-form .title-box h3{
+    color: var(--bs-bluelight);
+    font-size:30px;
+    font-weight: bold;
+}
+
+#form-seccion .box-form .title-box h5{
+    color: #ffffff;
+    font-size:21.5px;
+    font-weight: bold;
+}
+
+#form-seccion .box-form form{
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin:auto;
+    margin-top:50px;
+}
+
+/* CAMPO DE TELEFONO */
+.iti.iti--allow-dropdown{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.iti__selected-flag{
+    background: transparent !important;
+    color: white !important;
+}
+
+#form-seccion .box-form .form-input{
+    display:block;
+    width: 100%;
+    background-color: var(--bs-bluestrong);
+    border:none;
+    border-bottom: 2px solid white;
+    color:white;
+    padding: 10px 0px;
+    outline: none;
+}
+
+#form-seccion .box-form .form-input:visited{
+    background:red;
+}
+
+
+
+#form-seccion .box-form form label{
+    position:relative;
+    color: var(--bs-white);
+    font-size:18px;
+    z-index:0;
+    cursor:text;
+}
+
+#form-seccion .box-form .btn{
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: var(--bs-bluestrong);
+    font-weight: bold;
+    margin:auto;
+    margin-top:15px;
+    width: 100%;
+    font-size:22px;
+}
+
+#form-seccion .box-form .btn:hover{
+    transition: all .5s ease-in-out;
+    background-color: var(--bs-bluelight);
+    color: var(--bs-white);
+    border-color: var(--bs-bluelight);
+}
+
+
+
+/* SECCIÓN DE PRODUCTOS */
+#products{
+    position:relative;
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 500px;
+    margin-top:50px;
+    background-image: url('../img/bg.png');
+    background-position:center;
+    background-size: cover;
+}
+
+
+#products .container-image{
+    width: 100%;
+    height: 100%;
+    margin:auto !important;
+    z-index:50;
+    position:relative;
+    padding: 0px 5px;
+}
+
+#products .col-6{
+    z-index:10;
+}
+
+#products .container-image img{
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin:auto;
+    z-index: 5;
+}
+
+#products .product-box{
+    position:relative;
+    overflow: hidden;
+    z-index:10;
+}
+
+#products .container-info{
+    display: block;
+    margin:auto;
+    width: 100%;
+
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: var(--bs-bluestrong);
+}
+
+#products .container-info .info-bg{
+    position:absolute;
+    display: block;
+    margin:auto;
+    width: 99.5%;
+    height:100%;
+    background:white;
+    z-index: 15;
+    left:0;
+    right:0;
+}
+
+#products .container-info .info-text{
+    z-index: 100;
+    position:relative;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: var(--bs-bluestrong);
+    top:15px;
+    margin-bottom:50px;
+    min-height: 80px;
+}
+
+#products .container-info{
+    display:block;
+    width: 80%;
+}
+
+#products .container-info h3{
+    font-size:15px;
+    font-weight: bold;
+    color: var(--bs-bluestrong);
+    text-align: center;
+   font-family: "Poppins-Bold";
+}
+
+#products .container-info h5{
+    font-size:15px;
+    color: var(--bs-bluestrong);
+    text-align: center;
+}
+
+#products .container-info small{
+    font-size:11px;
+    color: var(--bs-bluestrong);
+    text-align: center;
+    display: block;
+}
+
+#products .container-info span{
+    display: block;
+    font-size:15px;
+    color: var(--bs-supergray);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+
+#products .linea1{
+    position:absolute;
+    display: block;
+
+    left:0px;
+    right:0px;
+    bottom:0px;
+    top:0px;
+
+    height:100%;
+    width:15px;
+
+    padding:0 !important;
+    margin:auto !important;
+    background-color: var(--bs-bluestrong);
+    z-index:10;
+}
+
+#products .background{
+    position:absolute;
+    display: block;
+    margin:auto;
+
+    left:0px;
+    right:0px;
+
+    height:var(--max-mobile-height);
+
+    background-color: var(--bs-bluestrong);
+    z-index: 0;
+    margin-top:10px;
+    max-width: 400px;
+}
+
+
+footer{
+    display: block;
+    width: 100%;
+    background-color: var(--bs-bluestrong);
+    padding: 35px 50px;
+}
+
+footer .title{
+    display: block;
+    margin:auto;
+    width:80%;
+    font-size: 18px;
+    color: var(--bs-bluelight);
+    font-weight: bold;
+    text-align: center;
+    margin-top:50px;
+   font-family: "Poppins-Bold";
+}
+
+footer h3{
+    color:white;
+    font-size:35px;
+    display: block;
+    width:100%;
+    text-align: center;
+    margin:auto;
+    font-family: 'Poppins-Regular';
+    margin-bottom:20px;
+    font-weight: 500;
+}
+
+footer .linea{
+    position:relative;
+    display: block;
+    width:100%;
+    height:.5px;
+    background-color:white;
+}
+
+footer .card{
+    background: inherit;
+    border:none;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    padding: 50px 0px;
+    box-shadow: inherit !important;
+}
+
+footer .icon{
+    display: block;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:25px;
+    max-width: 100px;
+}
+
+
+footer .icon-4{
+    max-width: 50px
+}
+
+
+
+footer .card h4{
+    font-size:30px;
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: 'Poppins-Bold';
+}
+
+footer .card h5{
+    font-size:22px;
+    color:var(--bs-bluelight);
+    display: block;
+    text-align: center;
+    font-family: 'Poppins-Regular'
+}
+
+footer .card p{
+    color: white;
+    text-align: center;
+    display: block;
+    margin:auto;
+    max-width: 250px;
+    font-family: 'Poppins-Regular'
+}
+
+footer .final{
+    display: block;
+    text-align: center;
+    color:white;
+    margin-top:50px;
+    font-size:25px;
+    font-weight: bold;
+    font-family: 'Poppins-bold';
+}
+
+footer .btn{
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: var(--bs-bluestrong);
+    font-weight: bold;
+    width: 100%;
+    font-size:22px;
+    background-color: var(--bs-bluelight);
+    border:none;
+    max-width: 350px;
+    display: block;
+    margin:auto;
+    margin-top:25px;
+    
+}
+
+footer .btn:hover{
+    transition: all .5s ease-in-out;
+    background-color: white;
+}
