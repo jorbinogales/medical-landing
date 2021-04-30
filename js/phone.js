@@ -13,7 +13,7 @@ var input = document.querySelector("#phone");
               //     console.log(countryCode);
               //   });
               // },
-              hiddenInput: "full_number",
+              hiddenInput: "phone",
               initialCountry: "ve",
               // localizedCountries: { 'de': 'Deutschland' },
               // nationalMode: true,
@@ -21,5 +21,5 @@ var input = document.querySelector("#phone");
                placeholderNumberType: "MOBILE",
               // preferredCountries: ['cn', 'jp'],
               separateDialCode: true,
-              utilsScript: "../dist/build/js/utils.js",
-            });
+              utilsScript: "build/js/utils.js",
+});

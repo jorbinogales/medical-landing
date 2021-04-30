@@ -6,6 +6,9 @@ use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use Validator;
+use Mail;
+use App\Mail\EmailReceived;
+
 
 class ContactController extends Controller
 {
@@ -34,6 +37,8 @@ class ContactController extends Controller
             'phone' => 'required|unique:contacts,phone'
         ]);
 
+
+
         if($validator->fails()){
     
             return 'Telefono o correo existentes';
@@ -41,6 +46,12 @@ class ContactController extends Controller
         } else {
 
             $contact = Contact::create(request()->all());
+
+            try{
+                $owner = Mail::to('jorbinogales@gmail.com')->send(new EmailReceived($contact));
+            } catch (Exception $e){
+                
+            }
 
             return $contact;
         }
