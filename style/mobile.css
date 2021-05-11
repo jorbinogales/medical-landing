@@ -24,7 +24,7 @@
     --bs-bluelight: #05C6C6;
     --bs-white: white;
     --bs-gray: #AEAFB0;
-    --bs-supergray:#C2CFE4;
+    --bs-supergray:rgba(150,150,150,1);
 }
 
 
@@ -77,16 +77,14 @@
     font-weight: bold;
 }
 
-#top #img-seccion .title-box h3{
-    display:block;
+#top #img-seccion .title-box span{
     margin:auto;
     background-color: var(--bs-bluestrong);
     color: var(--bs-bluelight);
     font-size:30px;
-    max-width: 150px;
     font-weight: bold;
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 10px 15px;
 }
 
 #top #img-seccion .title-box p{
@@ -100,11 +98,15 @@
     padding-bottom:25px;
 }
 
+#formRegister{
+    position:relative;
+    padding: 15px 5px;
+}
+
 #form-seccion .box-form{
     position:relative;
     display: block;
     margin:auto;
-    margin-top:150px;
     z-index:100;
 }
 
@@ -120,7 +122,7 @@ footer .medical_logo{
 
 #form-seccion .box-form .title-box{
     display:block;
-    width: 80%;
+    width: 95%;
     margin:auto;
     text-align: center;
     font-family: 'Poppins-Regular';
@@ -192,7 +194,7 @@ footer .medical_logo{
     margin:auto;
     margin-top:15px;
     width: 100%;
-    font-size:22px;
+    font-size:15px;
 }
 
 #form-seccion .box-form .btn:hover{
@@ -227,6 +229,17 @@ footer .medical_logo{
     padding: 0px 5px;
 }
 
+#products .container-image span{
+    background-color: var(--bs-bluelight);
+    padding:5px 10px;
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+}
+
 #products .col-6{
     z-index:10;
 }
@@ -234,7 +247,6 @@ footer .medical_logo{
 #products .container-image img{
     display: block;
     width: 100%;
-    height: 250px;
     margin:auto;
     z-index: 5;
 }

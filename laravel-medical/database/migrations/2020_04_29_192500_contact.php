@@ -17,6 +17,7 @@ class Contact extends Migration
             $table->id();
             $table->string('name');
             $table->string('subname');
+            $table->string('business');
             $table->string('phone');
             $table->string('email')->unique();
             $table->timestamps();
@@ -30,6 +31,6 @@ class Contact extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('contacts');
     }
 }

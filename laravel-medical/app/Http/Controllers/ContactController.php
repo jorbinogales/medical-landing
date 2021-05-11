@@ -33,6 +33,7 @@ class ContactController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'subname' => 'required',
+            'business' => 'required',
             'email' => 'required|unique:contacts,email',
             'phone' => 'required|unique:contacts,phone'
         ]);
@@ -48,7 +49,7 @@ class ContactController extends Controller
             $contact = Contact::create(request()->all());
 
             try{
-                $owner = Mail::to('jorbinogales@gmail.com')->send(new EmailReceived($contact));
+                 // $owner = Mail::to('jorbinogales@gmail.com')->send(new EmailReceived($contact));
             } catch (Exception $e){
                 
             }
@@ -58,6 +59,5 @@ class ContactController extends Controller
     }
 
 }
-
 
 

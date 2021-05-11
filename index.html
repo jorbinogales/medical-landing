@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="build/css/demo.css">
     <link rel="stylesheet" type="text/css" href="plugins/sweetalert2/sweetalert2.css">
     <link rel="icon" href="img/ico.png">
+    <link rel="stylesheet" href="style/loading.css">
 </head>
 <body>
     <section id="top">
@@ -20,17 +21,21 @@
                 <img src="img/logoRecurso 4.png" alt="medical_logo" class="logo">
                 <div class="title-box">
                     <h2>ALTA</h2>
-                    <h3>CALIDAD</h3>
+                    <span>CALIDAD</span>
                     <p>PARA TU <br> FARMACIA</p>
                 </div>
             </div>
             <div class="col-12 col-lg-6" id="form-seccion">
                     <div class="box-form">
+                        <form method="post" id="formRegister">
+                        <div class="card-loading">
+                            <div class="lds-ripple"><div></div><div></div></div>
+                        </div>
                         <div class="title-box">
                             <h3>SOLICITA NUESTRO</h3>
-                            <h5>CATÁLOGO DE PRODUCTOS</h5>
+                            <h5>CATÁLOGO DE <br>PRODUCTOS</h5>
                         </div>
-                        <form method="post" id="formRegister">
+                        
                             <div class="input">
                                 <label for="nameInput">Nombre</label>
                                 <input type="text" class="form-input" id="nameInput" required name="name">
@@ -39,6 +44,11 @@
                             <div class="input">
                                 <label for="subnameInput">Apellido</label>
                                 <input type="text" class="form-input" id="subnameInput" required name="subname">
+                                
+                            </div>
+                            <div class="input">
+                                <label for="subnameInput">Empresa</label>
+                                <input type="text" class="form-input" id="businessInput" name="business" required>
                                 
                             </div>
                             <div class="input">
@@ -70,11 +80,12 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item1.png" alt="medical_producto">
+                        <span class="bg-tablet">30 Tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
                         <div class="info-text">
-                            <h3>PREDED</h3>
+                            <h3>PREDET</h3>
                             <h5>Prednisolona</h5>
                             <span>5 mg</span>
                         </div>
@@ -85,6 +96,7 @@
                 <div class="product-box">
                     <div class="container-image">
                          <img src="img/item2.png" alt="medical_producto">
+                         <span class="bg-tablet">14 tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
@@ -100,6 +112,7 @@
                 <div class="product-box">
                     <div class="container-image">
                        <img src="img/item3.png" alt="medical_producto">
+                       <span class="bg-tablet">20 Tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
@@ -115,6 +128,7 @@
                 <div class="product-box">
                     <div class="container-image">
                        <img src="img/item4.png" alt="medical_producto">
+                       <span class="bg-tablet">12 cápsulas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
@@ -130,6 +144,7 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item5.png" alt="medical_producto">
+                        <span class="bg-tablet">20 Tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
@@ -145,11 +160,12 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item6.png" alt="medical_producto">
+                        <span class="bg-tablet">30 Tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
                         <div class="info-text">
-                            <h3>DELADET</h3>
+                            <h3>DESLADET</h3>
                             <h5>Desloratadina</h5>
                             <span>5 mg</span>
                         </div>
@@ -160,12 +176,13 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item7.png" alt="medical_producto">
+                        <span class="bg-tablet">30 Tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
                         <div class="info-text">
                             <h3>NITRODET</h3>
-                            <h5>Nitrofución</h5>
+                            <h5>Nitrofurantoina</h5>
                             <span>50 mg</span>
                         </div>
                     </div>
@@ -175,12 +192,13 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item8.png" alt="medical_producto">
+                        <span class="bg-tablet">30 tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
                         <div class="info-text">
                             <h3>LOSDET</h3>
-                            <h5>Losartan Potasico</h5>
+                            <h5>Losartan Potásico</h5>
                             <span>50 mg</span>
                         </div>
                     </div>
@@ -190,6 +208,7 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item9.png" alt="medical_producto">
+                        <span class="bg-tablet">30 cápsulas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
@@ -205,14 +224,15 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item10.png" alt="medical_producto">
+                        <span class="bg-tablet">Uso tópico</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
                         <div class="info-text">
                             <h3>CLOBEDET</h3>
-                            <small>Cotrimazole
-                            Betamethasone
-                            Neomycina</small>
+                            <small>Clotrimazol
+                            Betametasona
+                            Neominica</small>
                             <span>15 mg</span>
                         </div>
                     </div>
@@ -222,6 +242,7 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item11.png" alt="medical_producto">
+                        <span class="bg-tablet">3 Tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
@@ -237,13 +258,14 @@
                 <div class="product-box">
                     <div class="container-image">
                         <img src="img/item12.png" alt="medical_producto">
+                         <span class="bg-tablet">10 Tabletas</span>
                     </div>
                     <div class="container-info">
                         <div class="info-bg"></div>
                         <div class="info-text">
                             <h3>CIDET</h3>
                             <h5>Ciproflaxina</h5>
-                            <span>500 mg</span>
+                            <span>500 mg </span>
                         </div>
                     </div>
                 </div>
