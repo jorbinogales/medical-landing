@@ -6,57 +6,61 @@
 	<title>Pedido Exitoso</title>
 	<link rel="stylesheet" href="">
 	<style>
-		.card{
-			position:relative;
-			display: block;
-			box-shadow: 0px 0px 5px 2px black;
-			padding: 15px 20px;
-			border-radius: 25px;
-			width: 100%;
-			max-width: 300px;
-			margin:auto;
-		}
-
-		.card #logo_sky{
-			max-width: 100px;
-			display: block;
-			margin:auto;
-		}
-
-		.card .lista{
-			display: flex;
-			flex-wrap: wrap;
-			list-style: none;
-		}
-
-		.card .lista li{
-			width:50%;
-			margin:auto;
-		}
-
-		.card button{
-			display:block;
-			width:50px;
-			height:50px;
-			background-color: red;
-		}
-
+	
+	    .card{
+	        position:relative;
+	        display:block;
+	        margin:auto;
+	        background:white;
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+	        border-radius:5px;
+	        margin:auto;
+	        max-width:500px;
+	    }
+	    
+	    .card-body{
+	        padding: 10px 5px;
+	    }
+	    
+	    .card-body h2{
+	        text-align:center;
+	        display:block;
+	        color:#05C6C6;
+	    }
+	    
+	    .card-body p{
+	        text-align:center;
+	        display:block;
+	        color: #05408D;
+	    }
+	    
+	    .btn{
+	        display:block;
+	        max-width: 250px;
+	        margin:auto;
+	        position:relative;
+	        background-color:#05C6C6;
+	        color:white !important;
+	        padding: 5px 10px;
+	        border-radius:5px;
+	        cursor:pointer;
+	        text-decoration:none;
+	        text-align:center;
+	    }
+	    
+	    .btn:hover{
+	        background-color: #05408D;
+	        transition: all .5s ease-in-out;
+	    }
 	</style>
 </head>
 <body>
-	<div class="card">
-		<img src="http://amedicalcdr.com/img/logoRecurso 4.png" alt="Logo sky" id="logo_sky">
-		<h2 style="display:block; text-align: center">Pedido Recibido</h2>
-		<p style="display:block; text-align: center">Detalles del Pedido</p>
-		<hr>
-		<p style="display:block; text-align: center;">Se ha cargado un nuevo Pedido</p>
-
-
-
-
-	<p style="color:black; text-align: center; font-weight: bold;">Puedes acceder desde este enlace: <p><br><br>
-
-	<a style="display:block; color:red; text-align: center; font-weight: bold;" href="http://app.skylubricantes.com/">Sky plataforma</a>
-
+    <div class="card">
+        <div class="card-body">
+            <h2>GRACIAS POR SUSCRIBIRTE A NUESTRO SITIO</h2>
+            <p>Pulsa el siguiente Botón para descargar nuestro catálogo</p>
+            <a class="btn" href="http://amedicalcdr.com/files/brochure.pdf" download="brochure.pdf">DESCARGAR CATÁLOGO</a>
+        </div>
+    </div>
 </body>
 </html>

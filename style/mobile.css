@@ -69,6 +69,7 @@
     text-align: center;
 
     font-family: "Poppins-Bold";
+   
 }
 
 #top #img-seccion .title-box h2{
@@ -84,7 +85,7 @@
     font-size:30px;
     font-weight: bold;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 5px 8px;
 }
 
 #top #img-seccion .title-box p{
@@ -92,6 +93,7 @@
     font-size: 30px;
     font-weight: bold;
     margin-top:15px;
+     text-shadow: 0px 0px 5px rgba(100,100,100,.8);
 }
 
 #form-seccion{
@@ -462,8 +464,6 @@ footer .final{
     color:white;
     margin-top:50px;
     font-size:25px;
-    font-weight: bold;
-    font-family: 'Poppins-bold';
 }
 
 footer .btn{

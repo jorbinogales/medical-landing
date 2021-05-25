@@ -3,7 +3,7 @@ $('#formRegister').submit(function(e){
 	loading.style.display = "block";
 	e.preventDefault();
 	$.ajax({
-		url: 'http://127.0.0.1:8000/api/contacts/create',
+		url: 'http://api.amedicalcdr.com/api/contacts/create',
 		type: 'post',
 		dataType: 'json',
 		data: $(this).serialize(),

@@ -8,6 +8,7 @@ use App\Models\Contact;
 use Validator;
 use Mail;
 use App\Mail\EmailReceived;
+use App\Mail\EmailSend;
 
 
 class ContactController extends Controller
@@ -49,7 +50,13 @@ class ContactController extends Controller
             $contact = Contact::create(request()->all());
 
             try{
-                 // $owner = Mail::to('jorbinogales@gmail.com')->send(new EmailReceived($contact));
+                 $owner = Mail::to('juan@amedicalcdr.com')->send(new EmailReceived($contact));
+            } catch (Exception $e){
+                
+            }
+            
+            try{
+                 $owner = Mail::to($contact->email)->send(new EmailSend($contact));
             } catch (Exception $e){
                 
             }
