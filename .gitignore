@@ -1,4 +1,4 @@
-laravel-medical/
-vendor/
-api/
-blog/
+laravel-medical/*
+vendor/*
+api/*
+blog/*
