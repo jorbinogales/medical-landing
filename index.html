@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 </head>
 <body>
     <section id="top">
-        <div class="row h-100 p-0 m-0">
+        <div class="row h-100">
             <div id="border-bg"></div>
             <div class="col-12 col-lg-6" id="img-seccion">
                 <img src="img/logoRecurso 4.png" alt="medical_logo" class="logo">
@@ -37,19 +37,20 @@
                         </div>
                         
                             <div class="input">
-                                <label for="nameInput">Nombre</label>
-                                <input type="text" class="form-input" id="nameInput" required name="name">
-                                
-                            </div>
-                            <div class="input">
-                                <label for="subnameInput">Apellido</label>
-                                <input type="text" class="form-input" id="subnameInput" required name="subname">
-                                
+                                <label for="nameInput">Nombre y apellido</label>
+                                <input type="text" class="form-input" id="nameInput"  name="name">
                             </div>
                             <div class="input">
                                 <label for="subnameInput">Empresa</label>
                                 <input type="text" class="form-input" id="businessInput" name="business" required>
-                                
+                            </div>
+                            <div class="input">
+                                <label></label>
+                                <select name="businessType" id="bussinesTypeInput" class="form-input">
+                                    <option value="droguería">Droguería</option>
+                                    <option value="farmacía">Farmacía</option>
+                                    <option value="otro">Otro</option>
+                                </select>
                             </div>
                             <div class="input">
                                 <label for="emailInput">Correo Electrónico</label>
@@ -278,7 +279,7 @@
         <div class="row">
             <div class="col-12" id="title">
                 <span class="linea"></span>
-                <p class="title">12 Productos de alta calidad</p>
+                <p class="title">Productos de alta calidad</p>
                 <h3>Para tu negocio <br class="d-block d-lg-none">farmacéutico</h3>
             </div>
         </div>

@@ -20,7 +20,22 @@ Auth::routes();
 
 Route::middleware(['auth'])->group(function (){
 
+	Route::get('/index', 'ContactController@index');
+
 	Route::get('/', 'ContactController@index');
+
+
+	// DOCUMENTS CONTROLLER
+
+	Route::prefix('documents')->group(function () {
+
+		Route::get('/', 'DocumentController@index');
+
+		Route::post('/', 'DocumentController@create');
+	
+		Route::post('/send/', 'DocumentController@send');
+
+	});
 	
 });
 

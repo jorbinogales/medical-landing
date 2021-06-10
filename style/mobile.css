@@ -10,8 +10,6 @@
   src: url("../fuente/Poppins-Black.ttf");
 }
 
-
-
 *{
     padding: 0;
     margin:0;
@@ -49,6 +47,7 @@
     background-position:bottom center;
     padding-bottom:25px;
 }
+
 
 #img-seccion .logo{
     position:relative;
@@ -141,6 +140,7 @@ footer .medical_logo{
     color: #ffffff;
     font-size:21.5px;
     font-weight: bold;
+    margin-bottom: 50px;
 }
 
 #form-seccion .box-form form{
@@ -234,13 +234,14 @@ footer .medical_logo{
 
 #products .container-image span{
     background-color: var(--bs-bluelight);
-    padding:5px 10px;
+    padding:3px 7px;
     position:absolute;
-    bottom:10px;
-    left:20px;
+    bottom:5px;
+    left:10px;
     border-radius: 5px;
     color:white;
     font-weight: bold;
+    font-size:12px;
 }
 
 #products .col-6{

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\Document;
 use Validator;
 use Mail;
 use App\Mail\EmailReceived;
@@ -16,7 +17,9 @@ class ContactController extends Controller
     // LISTA DE CONTACTOS //
 	public function index(){
 
-        $contacts = Contact::Paginate(20);
+        
+
+        $contacts = Contact::orderBy('id', 'desc')->paginate(7);
 
 
         return view('index')->with([
@@ -33,36 +36,29 @@ class ContactController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name' => 'required',
-            'subname' => 'required',
             'business' => 'required',
+            'businessType' => 'required',
             'email' => 'required|unique:contacts,email',
             'phone' => 'required|unique:contacts,phone'
         ]);
 
+        $contact = Contact::create(request()->all());
 
+        $document = Document::latest()->first();
 
-        if($validator->fails()){
-    
-            return 'Telefono o correo existentes';
-
-        } else {
-
-            $contact = Contact::create(request()->all());
-
-            try{
-                 $owner = Mail::to('juan@amedicalcdr.com')->send(new EmailReceived($contact));
-            } catch (Exception $e){
-                
-            }
-            
-            try{
-                 $owner = Mail::to($contact->email)->send(new EmailSend($contact));
-            } catch (Exception $e){
-                
-            }
-
-            return $contact;
+        try{
+             $owner = Mail::to('juan@amedicalcdr.com')->send(new EmailReceived($contact));
+        } catch (Exception $e){
+            echo $e;
         }
+        
+        try{
+             $user = Mail::to($contact->email)->send(new EmailSend($document, 'Descarga nuestro Catálogo'));
+        } catch (Exception $e){
+            echo $e;
+        }
+
+        return $contact;
     }
 
 }

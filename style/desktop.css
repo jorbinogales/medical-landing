@@ -4,7 +4,7 @@
         height:100vh;
         min-height: 700px;
         background-image: url('../img/headerMobile.png');
-        background-size: contain;
+        background-size: cover !important;
         background-position: bottom;
     }
 
@@ -81,7 +81,5 @@
         background-color: var(--bs-bluestrong);
         z-index: 50;
     }
-
-    footer h3
 
 }

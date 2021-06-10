@@ -57,9 +57,9 @@
 <body>
     <div class="card">
         <div class="card-body">
-            <h2>GRACIAS POR SUSCRIBIRTE A NUESTRO SITIO</h2>
+            <h2>{{ $msg }}</h2>
             <p>Pulsa el siguiente Botón para descargar nuestro catálogo</p>
-            <a class="btn" href="http://amedicalcdr.com/files/brochure.pdf" download="brochure.pdf">DESCARGAR CATÁLOGO</a>
+            <a class="btn" href="http://api.amedicalcdr.com/uploads/{{ $document }}" download="brochure.pdf">DESCARGAR CATÁLOGO</a>
         </div>
     </div>
 </body>

@@ -58,7 +58,7 @@
 
 	<p style="color:black; text-align: center; font-weight: bold;">Puedes acceder desde este enlace: <p><br><br>
 
-	<a style="display:block; color:red; text-align: center; font-weight: bold;" href="http://api.skylubricantes.com/">Medical Plataforma</a>
+	<a style="display:block; color:red; text-align: center; font-weight: bold;" href="http://api.amedicalcdr.com/login">Medical Plataforma</a>
 
 </body>
 </html>
