@@ -36,8 +36,20 @@ Route::middleware(['auth'])->group(function (){
 		Route::post('/send/', 'DocumentController@send');
 
 	});
+
+	Route::prefix('products')->group(function(){
+
+		Route::get('/','ProductController@index');
+
+	});
 	
 });
 
+
+Route::prefix('documents')->group(function(){
+
+	Route::get('/get/{fileName}', 'DocumentController@downloadFile');
+
+});
 
 

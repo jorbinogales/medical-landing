@@ -232,12 +232,20 @@ footer .medical_logo{
     padding: 0px 5px;
 }
 
-#products .container-image span{
+#products .container-info .bg-tablet{
+    width:100%;
+    height: auto;
+    display:block;
+    position: relative;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+#products .container-info .bg-tablet span{
+    display: inline;
+    position: relative;
     background-color: var(--bs-bluelight);
-    padding:3px 7px;
-    position:absolute;
-    bottom:5px;
-    left:10px;
+    padding:5px 10px;
     border-radius: 5px;
     color:white;
     font-weight: bold;
@@ -297,7 +305,7 @@ footer .medical_logo{
     border-color: var(--bs-bluestrong);
     top:15px;
     margin-bottom:50px;
-    min-height: 80px;
+    min-height: 130px;
 }
 
 #products .container-info{

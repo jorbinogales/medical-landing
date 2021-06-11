@@ -1,3 +1,7 @@
 vendor/
 api/
 blog/
+laravel-medical/.gitignore
+laravel-medical/.git
+laravel-medical/.env
+laravel-medical/public/*

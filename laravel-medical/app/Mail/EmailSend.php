@@ -14,6 +14,7 @@ class EmailSend extends Mailable
 
     public $msg;
     public $document;
+    public $host;
 
     /**
      * Create a new message instance.
@@ -21,10 +22,11 @@ class EmailSend extends Mailable
      * @return void
      */
    
-    public function __construct($document, $msg)
+    public function __construct($document, $msg, $host)
     {
         $this->msg = $msg;
         $this->document = $document;
+        $this->host = $host;
     }
 
     /**

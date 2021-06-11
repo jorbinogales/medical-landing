@@ -53,7 +53,7 @@ class ContactController extends Controller
         }
         
         try{
-             $user = Mail::to($contact->email)->send(new EmailSend($document, 'Descarga nuestro Catálogo'));
+             $user = Mail::to($contact->email)->send(new EmailSend($document['serverName'], 'Descarga nuestro Catálogo'));
         } catch (Exception $e){
             echo $e;
         }

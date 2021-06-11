@@ -48,6 +48,8 @@ class DocumentController extends Controller
 
     public function send(Request $request){
 
+        $host = request()->getHost(); 
+
         $document = Document::where('id', $request->documentID)->first();
 
         if($request->businessType != 'all'){
@@ -65,7 +67,7 @@ class DocumentController extends Controller
         try{
 
             foreach($contacts as $contact): 
-                $user = Mail::to($contact->email)->send(new EmailSend($document['serverName'], $message));
+                $user = Mail::to($contact->email)->send(new EmailSend($document['serverName'], $message, $host));
 
             endforeach;
 
@@ -74,9 +76,19 @@ class DocumentController extends Controller
         }
 
         return back()
-            ->with('success','El archivo se ha enviado con exito a los.');
+            ->with('success','El archivo se ha enviado con exito');
                 
     }
+
+
+    public function downloadFile($fileName)
+    {
+        $myFile = public_path("uploads/".$fileName);
+        $headers = ['Content-Type: application/pdf'];
+        $newName = 'nicesnippets-pdf-file-'.time().'.pdf';
+
+        return response()->download($myFile, $newName, $headers);
+    }	
 
 }
 

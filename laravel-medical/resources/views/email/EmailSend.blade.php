@@ -59,8 +59,9 @@
         <div class="card-body">
             <h2>{{ $msg }}</h2>
             <p>Pulsa el siguiente Botón para descargar nuestro catálogo</p>
-            <a class="btn" href="http://api.amedicalcdr.com/uploads/{{ $document }}" download="brochure.pdf">DESCARGAR CATÁLOGO</a>
+            <a class="btn" href="http://{{ $host }}/documents/get/{{ $document }}" target="_blank">DESCARGAR CATÁLOGO</a>
         </div>
     </div>
+
 </body>
 </html>
