@@ -34,6 +34,8 @@ class ContactController extends Controller
      */
     public function create(Request $request){
 
+        $host = request()->getHost(); 
+
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'business' => 'required',
@@ -53,7 +55,7 @@ class ContactController extends Controller
         }
         
         try{
-             $user = Mail::to($contact->email)->send(new EmailSend($document['serverName'], 'Descarga nuestro Catálogo'));
+             $user = Mail::to($contact->email)->send(new EmailSend($document['serverName'], 'Descarga nuestro Catálogo', $host));
         } catch (Exception $e){
             echo $e;
         }
